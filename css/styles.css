@@ -1,5 +1,9 @@
 :root {
     --primary-color-bg: #ffffff;
+    --hero-bg: #2F303A;
+    --team-bg: #F5F4FA;
+    --footer-bg: #2F303A;
+
     --primary-color-text: #757575;
     --title-color-text: #212121;
     --active-color: #2196F3;
@@ -11,29 +15,36 @@
     --button-bg-pf: #F5F4FA;
     --button-ac: #ffffff;
 
-    --primary-font: 'Roboto';
-    --logo-font: 'Raleway';
+
 }
 
-ul {
-    list-style: none;
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
 }
 
 body {
-    
-    font-family: 'Roboto';
+    font-family: 'Roboto', 'Verdana', 'Arial', 'snas-serif';
+
+    color: var(--primary-color-text);
     background-color: var(--primary-color-bg);
-    font-style: normal;
+    letter-spacing: 0.03em;
+}
+.list {
+    list-style: none;
+}
+h2,h3 {
+    color: var(--title-color-text);
 }
 /* header */
 .logo {
-    font-family: var(--logo-font);
+    font-family: 'Raleway', 'snas-serif';
     text-decoration: none;
-    font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
-    letter-spacing: 0.03em;
-
+    line-height: 1.9;
     color: var(--title-color-text) ;
 }
 .web-logo {
@@ -43,38 +54,42 @@ body {
 header {
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
+    
 }
 .nav-title {
-    text-decoration: none;
     color: var(--title-color-text)
 }
-.nav-title:hover,
-.nav-title:focus,
-.mail:hover,
-.mail:focus {
+.activ {
+    text-decoration: none;
+}
+.activ:hover,
+.activ:focus,
+.open {
     color:  var(--active-color)
 }
 
+button {
+    font: inherit;
+    cursor: pointer;
+}
 .mail {
-    text-decoration: none;
     color: var(--primary-color-text);
 }
 
 /* hero */
+.hero {
+    background-color: var(--hero-bg);
+}
 .hero-title {
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
-
-
-    text-align: center;
+    line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-
     color: var(--hero-color);
-    /* background-color: rgb(66, 1, 75); */
+
 }
 
 .hero-button {
@@ -82,70 +97,65 @@ header {
     background-color: var(--button-bg);
     font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
-    display: flex;
-    align-items: center;
-    text-align: center;
+    line-height: 1.88;
     letter-spacing: 0.06em;
+    text-transform: uppercase;
+    
 }
 /* особливості */
 
 
 .feature-title {
-    font-weight: 700;
+    
     font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
+    line-height: 1.14;
+    
     text-transform: uppercase;
 }
 
 .feature-page {
-    font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    color: var(--primary-color-text);
+    line-height: 1.71;
 }
 /* section */
 .section-title {
-    font-weight: 700;
+    
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.17;
     text-align: center;
-    letter-spacing: 0.03em;
+    
 }
 
+/* team */
+.sec-team {
+    background-color: var(--team-bg);
+}
 .team {
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.19;
     text-align: center;
-    letter-spacing: 0.03em;
+    
 }
 
 .team-title {
     font-weight: 500;
-    color: var(--title-color-text);
 }
 
-.team-page {
-    font-weight: 400;
-    color: var(--primary-color-text);
-}
+
 
 /* footer */
 footer {
-    /* background-color: rgb(66, 1, 75); */
+    background-color: var(--footer-bg);
 }
 address {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
+    line-height: 1.71;
+    
 }
 
 footer .logo {
-    
     color: var(--logo-footer)
 }
 .fotter-text {
@@ -165,15 +175,14 @@ footer .logo {
     color: var(--button-ac);
 }
 
-.portfolio h2{
-    font-weight: 700;
+.portfolio-title {
+    
     font-size: 18px;
-    line-height: 36px;
+    line-height: 2;
     letter-spacing: 0.06em;
 }
-.portfolio p {
+.portfolio-page {
     font-size: 16px;
-    line-height: 30px;
-    letter-spacing: 0.03em;
-    color: var(--primary-color-text);
+    line-height: 1.88;
+    
 }
