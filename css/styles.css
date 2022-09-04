@@ -162,7 +162,8 @@ footer .logo {
     text-decoration: none;
     color: var(--white-color)
 }
-.fotter-text:hover {
+.fotter-text:hover,
+.fotter-text:focus {
     color: var(--active-bg-color);
 }
 footer .mail {
